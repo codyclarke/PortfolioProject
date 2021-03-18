@@ -5,11 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="index.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="./css/styles.css" rel="stylesheet">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">   
+    <script src="https://kit.fontawesome.com/2ab30fb5e4.js" crossorigin="anonymous"></script>
+    <title>Puzzld: Find What's Missing</title>
 </head>
-<body>
-    
+<body class="body">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid d-flex justify-content-end">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="col-sm-10 navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Browse</a>
+          <a class="nav-link" href="#">Pricing</a>
+        </div>
+        <div class="col-4 col-sm-2 navbar-nav d-flex justify-content-end">
+          <a href="userPage.html" class="btn btn-cta"><i class="fa fa-puzzle-piece me-1" aria-hidden="true"></i>Sign in</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="header-img">
+    <div class="hero-text">
+      <h1 class="hero-words">Your Puzzle Hub</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex">
+        <h1 class="mx-auto">Features</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 d-flex">
+        <div class="divider col-4 mx-auto"></div>
+      </div>
+    </div>
+    <div class="flex-md-row row feature-row flex-column-reverse">
+      <div class="col col-md-6 justify-content-center">
+        <p> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et lacus elementum, tincidunt dui eu, sagittis mi. 
+          Praesent a volutpat nibh. Aliquam orci augue, dictum at malesuada eget, mollis quis velit.  
+        </p>
+      </div>
+      <div class="col col-md-6 d-flex justify-content-center justify-content-md-end">
+        <img class="feature-image d-flex" src="./img/image1.jpg">
+      </div>
+    </div>
+    <div class="row feature-row">
+      <div class="col col-md-6 d-flex justify-content-center justify-content-md-start">
+        <img class="feature-image d-flex" src="./img/image2.jpg">
+      </div>
+      <div class="col col-md-6">     
+        <p> 
+          Suspendisse odio ex, suscipit sed lacinia in, ultricies ut turpis. 
+          Vestibulum finibus odio sed felis efficitur volutpat. Pellentesque consectetur molestie enim. Cras pellentesque ultrices dignissim.
+          Mauris fringilla, velit eu laoreet tempor, ante nulla faucibus urna, dapibus tempor eros risus eget diam. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

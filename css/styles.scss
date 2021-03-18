@@ -1,0 +1,223 @@
+$primary-color: #9DEDF5;
+$light-secondary-color: #BDF9FF;
+$dark-secondary-color: #5BA2A8;
+$primary-text: #463600;
+$cta-color: #FF8A24;
+$cta-hover-color: lighten($cta-color,10%);
+$cta-button-text: azure;
+$feature-grey:rgb(236, 243, 243);
+
+
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.navbar{
+    background-color: $primary-color;
+}
+
+.feature-image{
+    height: 20rem;
+    width: 20rem;
+    background-repeat: no-repeat;
+    background-position:0%;
+    background-size: cover;
+    position: relative;
+    margin: 30px;
+}
+.header-img{
+    background-image: linear-gradient(rgba($dark-secondary-color,.75), rgba($primary-color,.75),rgba($light-secondary-color,.75)), url("../img/header3.jpg");
+    width: 100%;
+    height:30rem;
+    background-repeat: no-repeat;
+    background-position:0%;
+    background-size: cover;
+    position: relative;
+
+}
+
+.half-size{
+    height: 15rem;
+}
+
+.hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.hero-words{
+    color: $primary-text;
+}
+
+h3{
+    line-height: 1.5;
+    color: $primary-text;
+    font-size: 16pt;
+}
+
+h1{
+    color: $primary-text;
+    font-weight: 300;
+}
+
+.row{
+    padding: 30px;
+}
+
+.modal-row{
+    padding: 0px;
+}
+.feature-row {
+    background-color: $feature-grey;
+    padding: 30px;
+    margin: 30px 0px;
+    filter: drop-shadow(-10px 10px 4px rgb(204, 203, 203));
+    align-items: center;
+}
+
+.btn-cta{
+    background-color: $cta-color;
+    color:$cta-button-text;
+    border:$cta-button-text solid 1px;
+}
+.btn-cta:hover{
+    background-color: $cta-hover-color;
+    color:$cta-button-text;
+}
+
+.divider{
+    background-color: $primary-text;
+    padding: 1px;  
+}
+
+p{
+    font-size: 18pt;
+    line-height: 1.5;
+    margin: 30px;
+}
+
+.img-item-listing{
+    height: 10rem;
+    width: 10rem;
+    background-repeat: no-repeat;
+    background-position:0%;
+    background-size: cover;
+    position: relative;
+    margin: 10px;
+}
+
+.item-listing{
+    background-color: $feature-grey;
+    filter: drop-shadow(-10px 10px 4px rgb(204, 203, 203));
+    margin: 15px;
+    padding: 20px;
+
+}
+
+.navmenu{
+    background-color: $feature-grey;
+    padding: 30px;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-link{
+    color:$primary-text;
+    &:hover{
+        color: lighten($primary-text, 20%);
+    }
+}
+
+.add-collection-btn{
+    background-color: $cta-color;
+    color:$cta-button-text;
+    width: 50px;
+    
+    //justify-content: center;
+    &:hover{
+        color:$cta-hover-color;
+    }
+}
+.form-group{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+//rating, found from stackoverflow https://stackoverflow.com/questions/8118266/integrating-css-star-rating-into-an-html-form. 
+//Edited to use Font Awesome stars
+.txt-center {
+    text-align: center;
+}
+.hide {
+    display: none;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.rating {
+    width: 90px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+}
+
+.rating > label {
+    float: right;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1.1em;
+    cursor: pointer;
+    color: #000;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+    color: #FFD700;
+}
+
+.difficulty {
+    width: 90px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+}
+
+.difficulty > label {
+    float: right;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1.1em;
+    cursor: pointer;
+    color: #000;
+}
+
+.difficulty > label:hover,
+.difficulty > label:hover ~ label,
+.difficulty > input.radio-btn:checked ~ label {
+    color: #dd2a2a;
+}
