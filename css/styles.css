@@ -56,7 +56,8 @@ h1 {
 }
 
 .row {
-  padding: 30px;
+  margin: 0px;
+  width: 100%;
 }
 
 .modal-row {
@@ -93,34 +94,59 @@ h1 {
 p {
   font-size: 18pt;
   line-height: 1.5;
-  margin: 30px;
 }
 
-.img-item-listing {
-  height: 10rem;
-  width: 10rem;
+.item-container {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.item-listing img {
+  height: 60%;
+  width: 60%;
   background-repeat: no-repeat;
   background-position: 0%;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
-  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
 .item-listing {
   background-color: #ecf3f3;
+  background-clip: content-box;
+  max-height: 25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 10px;
   -webkit-filter: drop-shadow(-10px 10px 4px #cccbcb);
           filter: drop-shadow(-10px 10px 4px #cccbcb);
-  margin: 15px;
-  padding: 20px;
+}
+
+.item-listing i {
+  color: #FFD700;
+}
+
+.item-listing p {
+  font-size: 14pt;
+}
+
+.item-listing-text {
+  margin: 0px 10px;
 }
 
 .navmenu {
   background-color: #ecf3f3;
-  padding: 30px;
+  padding: 10px;
 }
 
 ul {
   list-style: none;
+  padding: 5px;
 }
 
 .nav-link {
@@ -221,5 +247,9 @@ ul {
 .difficulty > label:hover ~ label,
 .difficulty > input.radio-btn:checked ~ label {
   color: #dd2a2a;
+}
+
+.active {
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */

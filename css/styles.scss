@@ -6,7 +6,7 @@ $cta-color: #FF8A24;
 $cta-hover-color: lighten($cta-color,10%);
 $cta-button-text: azure;
 $feature-grey:rgb(236, 243, 243);
-
+$rating-star: #FFD700;
 
 
 body{
@@ -65,7 +65,8 @@ h1{
 }
 
 .row{
-    padding: 30px;
+    margin: 0px;
+    width: 100%;
 }
 
 .modal-row{
@@ -97,34 +98,55 @@ h1{
 p{
     font-size: 18pt;
     line-height: 1.5;
-    margin: 30px;
+    
+}
+.item-container{
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
-.img-item-listing{
-    height: 10rem;
-    width: 10rem;
+.item-listing img{
+    height: 60%;
+    width: 60%;
     background-repeat: no-repeat;
     background-position:0%;
-    background-size: cover;
+    object-fit: cover;
     position: relative;
-    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 .item-listing{
     background-color: $feature-grey;
+    background-clip: content-box;
+    max-height: 25rem;
+    justify-content: center;
+    padding: 15px 10px;
     filter: drop-shadow(-10px 10px 4px rgb(204, 203, 203));
-    margin: 15px;
-    padding: 20px;
 
+    i{
+        color: $rating-star;
+    }
+
+    p{
+        font-size: 14pt;
+    }
+}
+
+.item-listing-text{
+    margin: 0px 10px;
 }
 
 .navmenu{
     background-color: $feature-grey;
-    padding: 30px;
+    padding: 10px;
 }
 
 ul{
     list-style: none;
+    padding: 5px;
 }
 
 .nav-link{
@@ -194,7 +216,7 @@ ul{
 .rating > label:hover,
 .rating > label:hover ~ label,
 .rating > input.radio-btn:checked ~ label {
-    color: #FFD700;
+    color: $rating-star;
 }
 
 .difficulty {
@@ -220,4 +242,8 @@ ul{
 .difficulty > label:hover ~ label,
 .difficulty > input.radio-btn:checked ~ label {
     color: #dd2a2a;
+}
+
+.active{
+    font-weight: bold;
 }
